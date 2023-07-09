@@ -4,12 +4,15 @@ function beepboop(userNumber) {
   for (let i=0; i<=userNumber; i++) {
     numberArrays.push(i);
 
-    if (i.toString().includes("3")){
+      if (i.toString().includes("3")){
       numberArrays[i]= "Wont you be in my neighbor?"
-    }
-    else if(i.toString().includes("2")) {
-      numberArrays[I] = "boop"
-    }
+    
+    } else if (i.toString().includes("2")) {
+      numberArrays[i] = "boop"
+    
+  }   else if (i.toString().includes("1")) {
+    numberArrays[i] = "boop";
+  }
   }
   
     
