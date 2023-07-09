@@ -7,12 +7,18 @@ function beepboop(userNumber) {
   }
   return numberArrays
 
+  
+
 }
 
-const arrayStrings = ["beepboop", "beep" , "wont you be my neighbor"];
-console.log(arrayStrings)
+const stringArray = ["beep" , "beepboop", "wont you be my neioghbor?"]
 
-
+stringArray.forEach(function(num) {
+  if (num.includes("1")) {
+    num = "beep"
+    console.log(beep)
+  }
+});
 
 // if (userNumber.includes()
 
