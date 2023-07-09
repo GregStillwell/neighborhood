@@ -5,21 +5,26 @@ function beepboop(userNumber) {
     numberArrays.push(i);
 
   }
-  const userNumber = Number(userNumber);
-  const stringArray = numberArrays.map(String);
-
-  stringArray.forEach(function(Number) {
-    if (numberArrays.includes("1")) {
-      numberArrays = "beep"
-      console.log(beep)
-        }
-       
-  });
-  return numberArrays
-
-
   
+  const stringArray = numberArrays.map(String);
+  
+    let newArray = []
+    
+  stringArray.forEach(function(num) {
+    if  (num.includes("1")) {  
+      num = "beep"
+      
+      
+    }
+  })
+  
+        
+  
+  return numberArrays
 }
+
+ 
+
 
 
 
