@@ -15,11 +15,6 @@ function beepboop(userNumber) {
   }
   }
   
-    
-  
-  
-        
-  
   return numberArrays
 }
 
@@ -29,10 +24,13 @@ function beepboop(userNumber) {
 
 
 //Ui Logic
+
+const resetButton= document.getElementById("reset")
 function handleFormSubmission(event) {
   event.preventDefault();
   const userInput = parseInt(document.getElementById("textNumber").value)
-  console.log(beepboop(userInput))
+  
+
 }
   
 
