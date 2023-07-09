@@ -39,6 +39,9 @@ Test: "It should replace numbers that contain a "2" with "Boop"
 Code: beepBoop(2)
 Expected Output: [0, "Beep", "Boop"]
 
+Test: :It should replace numbers thats contain a "3" with "Wont you be in my neighbor" 
+Code: beepboop(3)
+Expected Output: [0,"beep, "beep", Wont you be in my neighbor"]
 
 
 Copyright (c) [2023] [Gregory leon Stillwell]
