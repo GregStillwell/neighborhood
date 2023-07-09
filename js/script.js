@@ -3,24 +3,24 @@ function beepboop(userNumber) {
   const numberArrays = [];
   for (let i=0; i<=userNumber; i++) {
     numberArrays.push(i);
-    
+
   }
+  const userNumber = Number(userNumber);
+  const stringArray = numberArrays.map(String);
+
+  stringArray.forEach(function(Number) {
+    if (numberArrays.includes("1")) {
+      numberArrays = "beep"
+      console.log(beep)
+        }
+       
+  });
   return numberArrays
 
-  
 
+  
 }
 
-const stringArray = ["beep" , "beepboop", "wont you be my neioghbor?"]
-
-stringArray.forEach(function(num) {
-  if (num.includes("1")) {
-    num = "beep"
-    console.log(beep)
-  }
-});
-
-// if (userNumber.includes()
 
 
 //Ui Logic
@@ -35,4 +35,4 @@ function handleFormSubmission(event) {
     window.addEventListener("load", function (){
       document.getElementById("inputNumber").addEventListener("submit", handleFormSubmission);
   
-});
+    });
