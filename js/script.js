@@ -1,58 +1,43 @@
 //business logic
 function beepboop(userNumber) {
   const numberArrays = [];
-  for (let i=0; i<=userNumber; i++) {
+  for (let i = 0; i <= userNumber; i++) {
     numberArrays.push(i);
 
-    let newArray =[];
+    let newArray = [];
 
-      if (i.toString().includes("3")){
-      numberArrays[i]= "Wont you be in my neighbor?"
-    
+    if (i.toString().includes("3")) {
+      numberArrays[i] = "Wont you be my neighbor?"
+
     } else if (i.toString().includes("2")) {
       numberArrays[i] = "boop"
-    
-  }   else if (i.toString().includes("1")) {
-    numberArrays[i] = "beep";
-    
-    newArray.push(numberArrays)
-    
-    
-    
-  }
+
+    } else if (i.toString().includes("1")) {
+      numberArrays[i] = "beep";
+
+      newArray.push(numberArrays)
+    }
   }
   return numberArrays
-  
 }
-
-  
-
 
 
 //Ui Logic
-window.onload = function() {
+window.onload = function () {
   const form = document.querySelector("form");
-  document.getElementById("Reset").addEventListener("click", (Event) => {
-    form.reset();
-    document.getElementById("output").innerText ="";
-  
+  const resetButton = document.getElementById("reset");
+
+  resetButton.addEventListener("click", (Event) => {
+    document.getElementById("output").innerText = "";
   });
-  
 
-  
-  
-  
-
-///const resetButton= document.getElementById("reset")
-function handleFormSubmission(event) {
-  event.preventDefault();
-  const userInput = parseInt(document.getElementById("textNumber").value)
-  
-
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const userInput = parseInt(document.getElementById("textNumber").value)
+    const transLat = beepboop(userInput)
+    console.log(transLat)
+    document.getElementById("output").innerText = transLat;
+  })
 }
-  
 
-    
-  //  window.addEventListener("load", function (){
-  //    document.getElementById("inputNumber").addEventListener("submit", handleFormSubmission);
-}
+

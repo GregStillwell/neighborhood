@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js"></script>
@@ -7,19 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neighbor Application </title>
 </head>
+
 <body>
   <form id="inputNumber">
     <h1>Neighbor Translator</h1>
-    <textarea id="textNumber" rows="6" cols="40" placeholder="Enter Numbers Here "></textarea>
+    <input id="textNumber" type="number" rows="6" cols="40" placeholder="Enter Numbers Here "></input>
     <br>
     <button type="submit" id="submit">Translate</button>
-    <button type ="reset" id="reset">Reset</button>
+    <button type="reset" id="reset">Reset</button>
   </form>
-    <br>
-    <div id="translation" class="hidden">
-   <h2>Results:</h2>
-   <p id ="output"></p>
+  <br>
+  <div id="translation">
+    <h2>Results:</h2>
+    <p id="output"></p>
   </div>
-
 </body>
+
 </html>

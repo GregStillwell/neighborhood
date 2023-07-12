@@ -3,25 +3,22 @@
 By ****
 Greg Stillwell
 
-{Brief description of application}
-This is a survey questions about what code langauge are you
-
 ### Technologies Used
 - Html
 - css
 - js
 
 ### Description
-I made survey question in my interest on what code langauge you would like
+This is a website that every number you type that has 1,2,3 in the number will turn into beep, boop or wont you be my neighbor.
 
 ### Setup/Installation Requirements
-clone this repository
-find where the file is
-open it
-Known Bugs
-javascript functions
-License
-MIT License
+- clone this repository: `$ git clone https://github.com/GregStillwell/neighborhood`
+- open `index.html` in a web browser.
+- right click and click on 'open with live server'
+- type a number and see your results
+
+### Known Bugs
+- None at this time.
 
 ### Test:
 
@@ -39,13 +36,13 @@ Test: "It should replace numbers that contain a "2" with "Boop"
 Code: beepBoop(2)
 Expected Output: [0, "Beep", "Boop"]
 
-Test: :It should replace numbers thats contain a "3" with "Wont you be in my neighbor" 
+Test: :It should replace numbers thats contain a "3" with "Wont you be my neighbor" 
 Code: beepboop(3)
-Expected Output: [0,"beep, "beep", Wont you be in my neighbor"]
+Expected Output: [0,"beep, "beep", Wont you be my neighbor"]
 
-Test : it should replace double digit numbers that ends with 3 with "'Wont you be in my neighbor"
+Test : it should replace double digit numbers that ends with 3 with "'Wont you be my neighbor"
 Code: beepboop(13)
-Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep', 'boop', 'Wont you be in my neighbor?']
+Expected Output:  [0 'beep', 'boop', 'Wont you be my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep', 'boop', 'Wont you be my neighbor?']
 
 Test : it should replace double digit numbers that ends with one with "Beep"
 Code: beepboop(11)
@@ -53,9 +50,9 @@ Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 
 
 Test : it should replace double digit numbers that ends with 2 with "boop"
 Code: beepboop(12)
-Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep' 'boop', ]
+Expected Output:  [0 'beep', 'boop', 'Wont you be my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep' 'boop', ]
 
-
+### License
 
 Copyright (c) [2023] [Gregory leon Stillwell]
 
