@@ -43,6 +43,19 @@ Test: :It should replace numbers thats contain a "3" with "Wont you be in my nei
 Code: beepboop(3)
 Expected Output: [0,"beep, "beep", Wont you be in my neighbor"]
 
+Test : it should replace double digit numbers that ends with 3 with "'Wont you be in my neighbor"
+Code: beepboop(13)
+Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep', 'boop', 'Wont you be in my neighbor?']
+
+Test : it should replace double digit numbers that ends with one with "Beep"
+Code: beepboop(11)
+Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep', ]
+
+Test : it should replace double digit numbers that ends with 2 with "boop"
+Code: beepboop(12)
+Expected Output:  [0 'beep', 'boop', 'Wont you be in my neighbor?', 4, 5, 6, 7, 8, 9, 'beep', 'beep' 'boop', ]
+
+
 
 Copyright (c) [2023] [Gregory leon Stillwell]
 
